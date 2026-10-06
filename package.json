@@ -1,0 +1,21 @@
+{
+  "name": "projeto-bar",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "description": "MVP de cardápio por QR Code, pagamento Pix demonstrativo e painel para bares.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check lib/store.js && node --check scripts/reset-data.js && node --check scripts/configure-tables.js && node --check public/src/app.js && node --check public/src/api.js && node --check public/src/client.js && node --check public/src/admin.js && node --check public/src/images.js && node --check public/src/utils.js",
+    "configure-tables": "node scripts/configure-tables.js",
+    "reset-data": "node scripts/reset-data.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.6.1",
+    "qrcode": "^1.5.4"
+  }
+}

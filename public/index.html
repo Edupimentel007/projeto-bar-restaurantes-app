@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <meta name="theme-color" content="#43520c" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Bar do Nardo" />
+    <meta name="application-name" content="Bar do Nardo" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="Cardápio digital, pedidos por mesa e painel operacional do Bar do Nardo."
+    />
+    <title>Bar do Nardo | Cardápio digital</title>
+    <script>
+      (() => {
+        const storageKey = "bar-do-nardo-theme-v1";
+        let theme = "light";
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          theme = savedTheme === "light" || savedTheme === "dark"
+            ? savedTheme
+            : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        } catch {
+          theme = "light";
+        }
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+        document.querySelector('meta[name="theme-color"]').setAttribute(
+          "content",
+          theme === "dark" ? "#12170d" : "#43520c"
+        );
+      })();
+    </script>
+    <script>
+      (() => {
+        const manifestParams = new URLSearchParams();
+        const isAdmin = location.pathname === "/admin" ||
+          location.pathname.startsWith("/admin/") ||
+          location.hash.startsWith("#/admin");
+
+        manifestParams.set("context", isAdmin ? "admin" : "client");
+        if (!isAdmin) {
+          const tableToken = new URLSearchParams(location.search).get("mesa");
+          if (tableToken) manifestParams.set("mesa", tableToken);
+        }
+
+        const manifestLink = document.createElement("link");
+        manifestLink.id = "app-manifest";
+        manifestLink.rel = "manifest";
+        manifestLink.href = "/manifest.webmanifest?" + manifestParams.toString();
+        document.head.appendChild(manifestLink);
+      })();
+    </script>
+    <link rel="icon" type="image/png" href="/assets/bar-do-nardo-logo.png" />
+    <link rel="apple-touch-icon" href="/assets/bar-do-nardo-logo.png" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/mobile.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="initial-loading">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/assets/responsive/branding/160/bar-do-nardo-logo.avif 160w, /assets/responsive/branding/320/bar-do-nardo-logo.avif 320w, /assets/responsive/branding/640/bar-do-nardo-logo.avif 640w"
+            sizes="112px"
+          />
+          <source
+            type="image/webp"
+            srcset="/assets/responsive/branding/160/bar-do-nardo-logo.webp 160w, /assets/responsive/branding/320/bar-do-nardo-logo.webp 320w, /assets/responsive/branding/640/bar-do-nardo-logo.webp 640w"
+            sizes="112px"
+          />
+          <img
+            class="brand-logo brand-logo-loading"
+            src="/assets/bar-do-nardo-logo.png"
+            alt="Bar do Nardo"
+            width="160"
+            height="160"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </picture>
+        <p>Preparando seu cardápio...</p>
+      </div>
+    </div>
+    <div id="toast-region" class="toast-region" aria-live="assertive" aria-atomic="true"></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

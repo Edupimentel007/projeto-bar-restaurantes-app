@@ -1,0 +1,28 @@
+{
+  "name": "Bar do Nardo — Cardápio digital",
+  "short_name": "Bar do Nardo",
+  "description": "Cardápio digital e pedidos por mesa do Bar do Nardo.",
+  "lang": "pt-BR",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fffbe9",
+  "theme_color": "#43520c",
+  "categories": ["food", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/assets/bar-do-nardo-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/bar-do-nardo-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

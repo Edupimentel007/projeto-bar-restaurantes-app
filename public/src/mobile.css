@@ -1,0 +1,102 @@
+/*
+ * Compatibilidade móvel transversal.
+ * Os ajustes visuais específicos do Cliente e do Admin permanecem em
+ * styles.css; esta camada reúne apenas fallbacks comuns de navegador.
+ */
+
+html {
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  overflow-wrap: break-word;
+  overscroll-behavior-y: none;
+}
+
+.initial-loading,
+.fatal-state {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  padding-top: max(24px, env(safe-area-inset-top, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  padding-bottom: max(24px, env(safe-area-inset-bottom, 0px));
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+}
+
+button,
+a,
+[data-action] {
+  touch-action: manipulation;
+}
+
+input,
+textarea,
+select,
+img {
+  max-width: 100%;
+}
+
+.category-tabs,
+.order-filter-tabs,
+.cart-list,
+.modal-card,
+.side-panel,
+.order-detail-panel {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Fallback de bloqueio para Safari/Chrome que suportam :has(). */
+body:has(.overlay),
+body:has(.modal-backdrop),
+body.is-layer-open {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .button:hover:not(:disabled),
+  .product-card:hover,
+  .theme-toggle:hover {
+    transform: none;
+  }
+}
+
+/*
+ * O Safari amplia automaticamente a página quando um campo focado tem
+ * fonte menor que 16 px. Aplicar só em telas móveis preserva o desktop.
+ */
+@media (max-width: 820px) {
+  .search-field input,
+  .order-search input,
+  .copy-field input,
+  .table-link input,
+  .form-stack input:not([type="checkbox"]):not([type="radio"]),
+  .form-stack textarea,
+  .form-stack select,
+  .login-form input {
+    font-size: 16px;
+  }
+
+  html {
+    scroll-padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body.is-admin-view .toast-region {
+    top: auto;
+    bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

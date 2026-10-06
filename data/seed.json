@@ -1,0 +1,604 @@
+{
+  "meta": {
+    "nextOrderNumber": 1042
+  },
+  "bar": {
+    "name": "Bar do Nardo",
+    "subtitle": "Porções caprichadas, cerveja gelada e a famosa Caipirinha do Nardo para acompanhar a conversa.",
+    "openingHours": "Hoje até 23h",
+    "pixKey": "pix@bardonardo.local"
+  },
+  "categories": [
+    {
+      "id": "cervejas",
+      "name": "Cervejas geladas",
+      "emoji": "🍺",
+      "active": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "drinks",
+      "name": "Caipirinhas & drinks",
+      "emoji": "🍸",
+      "active": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "petiscos",
+      "name": "Porções da casa",
+      "emoji": "🍢",
+      "active": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "sem-alcool",
+      "name": "Sem álcool",
+      "emoji": "🥤",
+      "active": true,
+      "sortOrder": 4
+    }
+  ],
+  "products": [
+    {
+      "id": "pilsen-600",
+      "categoryId": "cervejas",
+      "name": "Original Pilsen Garrafa 600 ml",
+      "description": "Cerveja Original Pilsen em garrafa de 600 ml, servida bem gelada.",
+      "priceCents": 1600,
+      "emoji": "🍺",
+      "brand": "Original",
+      "volume": "600 ml",
+      "packaging": "Garrafa de vidro",
+      "imageUrl": "/assets/products/original-600-transparent.png",
+      "imageAlt": "Garrafa de cerveja Original Pilsen 600 ml",
+      "available": true,
+      "active": true,
+      "featured": true,
+      "badge": "Para dividir",
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "ipa-lata",
+      "categoryId": "cervejas",
+      "name": "Brahma Duplo Malte Lata 350 ml",
+      "description": "Cerveja Brahma Duplo Malte em lata de 350 ml, servida bem gelada.",
+      "priceCents": 800,
+      "emoji": "🍺",
+      "brand": "Brahma",
+      "volume": "350 ml",
+      "packaging": "Lata",
+      "imageUrl": "/assets/products/brahma-duplo-malte-350-transparent.png",
+      "imageAlt": "Lata de cerveja Brahma Duplo Malte 350 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "heineken-long-neck-330",
+      "categoryId": "cervejas",
+      "name": "Heineken Original Long Neck 330 ml",
+      "description": "Cerveja Heineken Original em garrafa long neck de 330 ml, servida bem gelada.",
+      "priceCents": 1200,
+      "emoji": "🍺",
+      "brand": "Heineken",
+      "volume": "330 ml",
+      "packaging": "Garrafa long neck",
+      "imageUrl": "/assets/products/heineken-long-neck-330-transparent.png",
+      "imageAlt": "Garrafa long neck de cerveja Heineken Original 330 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "skol-pilsen-350",
+      "categoryId": "cervejas",
+      "name": "Skol Pilsen Lata 350 ml",
+      "description": "Cerveja Skol Pilsen em lata de 350 ml, servida bem gelada.",
+      "priceCents": 700,
+      "emoji": "🍺",
+      "brand": "Skol",
+      "volume": "350 ml",
+      "packaging": "Lata",
+      "imageUrl": "/assets/products/skol-pilsen-350-transparent.png",
+      "imageAlt": "Lata de cerveja Skol Pilsen 350 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "gin-tonica",
+      "categoryId": "drinks",
+      "name": "Gin tônica do Nardo",
+      "description": "Gin, tônica, limão-siciliano e alecrim.",
+      "priceCents": 2800,
+      "emoji": "🍸",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "caipirinha",
+      "categoryId": "drinks",
+      "name": "Caipirinha do Nardo",
+      "description": "A queridinha de Nova Odessa: cachaça, limão espremido na hora, açúcar e bastante gelo.",
+      "priceCents": 2200,
+      "emoji": "🍹",
+      "available": true,
+      "active": true,
+      "featured": true,
+      "badge": "Receita da casa",
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "negroni",
+      "categoryId": "drinks",
+      "name": "Caipirinha de frutas",
+      "description": "Morango ou maracujá, preparada na hora.",
+      "priceCents": 2400,
+      "emoji": "🍹",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "batata-rustica",
+      "categoryId": "petiscos",
+      "name": "Torresmo da casa",
+      "description": "Crocante e sequinho, servido com limão.",
+      "priceCents": 3800,
+      "emoji": "🥓",
+      "available": true,
+      "active": true,
+      "featured": true,
+      "badge": "Mais pedido",
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "dadinho-tapioca",
+      "categoryId": "petiscos",
+      "name": "Linguiça acebolada",
+      "description": "Linguiça na chapa, cebola dourada e vinagrete.",
+      "priceCents": 3500,
+      "emoji": "🌭",
+      "available": true,
+      "active": true,
+      "featured": true,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "cola-lata",
+      "categoryId": "petiscos",
+      "name": "Salgados da casa",
+      "description": "Porção com 10 unidades variadas, fritas na hora.",
+      "priceCents": 3000,
+      "emoji": "🥟",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "agua-gas",
+      "categoryId": "petiscos",
+      "name": "Cafta na brasa",
+      "description": "Espetinhos bem temperados, com farofa e vinagrete.",
+      "priceCents": 3900,
+      "emoji": "🍢",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "mandioca-frita",
+      "categoryId": "petiscos",
+      "name": "Mandioca frita",
+      "description": "Dourada por fora, macia por dentro e servida quentinha.",
+      "priceCents": 2500,
+      "emoji": "🍟",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "refrigerante-lata",
+      "categoryId": "sem-alcool",
+      "name": "Coca-Cola Original Lata 350 ml",
+      "description": "Coca-Cola Original em lata de 350 ml, servida bem gelada.",
+      "priceCents": 700,
+      "emoji": "🥤",
+      "brand": "Coca-Cola",
+      "volume": "350 ml",
+      "packaging": "Lata",
+      "imageUrl": "/assets/products/coca-cola-original-350-transparent.png",
+      "imageAlt": "Lata de Coca-Cola Original 350 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "coca-cola-zero-350",
+      "categoryId": "sem-alcool",
+      "name": "Coca-Cola Sem Açúcar Lata 350 ml",
+      "description": "Coca-Cola Sem Açúcar em lata de 350 ml, servida bem gelada.",
+      "priceCents": 700,
+      "emoji": "🥤",
+      "brand": "Coca-Cola",
+      "volume": "350 ml",
+      "packaging": "Lata",
+      "imageUrl": "/assets/products/coca-cola-zero-350-transparent.png",
+      "imageAlt": "Lata de Coca-Cola Sem Açúcar 350 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "guarana-antarctica-350",
+      "categoryId": "sem-alcool",
+      "name": "Guaraná Antarctica Lata 350 ml",
+      "description": "Guaraná Antarctica em lata de 350 ml, servido bem gelado.",
+      "priceCents": 700,
+      "emoji": "🥤",
+      "brand": "Guaraná Antarctica",
+      "volume": "350 ml",
+      "packaging": "Lata",
+      "imageUrl": "/assets/products/guarana-antarctica-350.png",
+      "imageAlt": "Lata de Guaraná Antarctica 350 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "suco-natural",
+      "categoryId": "sem-alcool",
+      "name": "Suco natural",
+      "description": "Laranja ou maracujá, preparado na hora.",
+      "priceCents": 1000,
+      "emoji": "🧃",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "agua-sem-gas",
+      "categoryId": "sem-alcool",
+      "name": "Crystal Sem Gás 500 ml",
+      "description": "Água mineral Crystal sem gás em garrafa PET de 500 ml.",
+      "priceCents": 500,
+      "emoji": "💧",
+      "brand": "Crystal",
+      "volume": "500 ml",
+      "packaging": "Garrafa PET",
+      "imageUrl": "/assets/products/crystal-sem-gas-500.webp",
+      "imageAlt": "Garrafa de água Crystal sem gás 500 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    },
+    {
+      "id": "agua-com-gas",
+      "categoryId": "sem-alcool",
+      "name": "Crystal Com Gás 500 ml",
+      "description": "Água mineral Crystal com gás em garrafa PET de 500 ml.",
+      "priceCents": 600,
+      "emoji": "💧",
+      "brand": "Crystal",
+      "volume": "500 ml",
+      "packaging": "Garrafa PET",
+      "imageUrl": "/assets/products/crystal-com-gas-500-transparent.png",
+      "imageAlt": "Garrafa de água Crystal com gás 500 ml",
+      "available": true,
+      "active": true,
+      "featured": false,
+      "createdAt": "2026-09-21T16:00:00.000Z",
+      "updatedAt": "2026-09-21T16:00:00.000Z"
+    }
+  ],
+  "tables": [
+    {
+      "id": "table-01",
+      "label": "Mesa 01",
+      "qrToken": "m01",
+      "active": true,
+      "createdAt": "2026-09-21T14:00:00.000Z"
+    },
+    {
+      "id": "table-02",
+      "label": "Mesa 02",
+      "qrToken": "m02",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-03",
+      "label": "Mesa 03",
+      "qrToken": "m03",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-04",
+      "label": "Mesa 04",
+      "qrToken": "m04",
+      "active": true,
+      "createdAt": "2026-09-21T14:00:00.000Z"
+    },
+    {
+      "id": "table-05",
+      "label": "Mesa 05",
+      "qrToken": "m05",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-06",
+      "label": "Mesa 06",
+      "qrToken": "m06",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-07",
+      "label": "Mesa 07",
+      "qrToken": "m07",
+      "active": true,
+      "createdAt": "2026-09-21T14:00:00.000Z"
+    },
+    {
+      "id": "table-08",
+      "label": "Mesa 08",
+      "qrToken": "m08",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-09",
+      "label": "Mesa 09",
+      "qrToken": "m09",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-10",
+      "label": "Mesa 10",
+      "qrToken": "m10",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-11",
+      "label": "Mesa 11",
+      "qrToken": "m11",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-12",
+      "label": "Mesa 12",
+      "qrToken": "m12",
+      "active": true,
+      "createdAt": "2026-09-21T14:00:00.000Z"
+    },
+    {
+      "id": "table-13",
+      "label": "Mesa 13",
+      "qrToken": "m13",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-14",
+      "label": "Mesa 14",
+      "qrToken": "m14",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-15",
+      "label": "Mesa 15",
+      "qrToken": "m15",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-16",
+      "label": "Mesa 16",
+      "qrToken": "m16",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-17",
+      "label": "Mesa 17",
+      "qrToken": "m17",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-18",
+      "label": "Mesa 18",
+      "qrToken": "m18",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-19",
+      "label": "Mesa 19",
+      "qrToken": "m19",
+      "active": true,
+      "createdAt": "2026-09-27T21:44:58.268Z"
+    },
+    {
+      "id": "table-20",
+      "label": "Mesa 20",
+      "qrToken": "m20",
+      "active": true,
+      "createdAt": "2026-09-21T14:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-demo-1042",
+      "publicCode": "PED-1042",
+      "tableId": "table-04",
+      "tableLabel": "Mesa 04",
+      "status": "NEW",
+      "paymentStatus": "APPROVED",
+      "paymentMethod": "PIX",
+      "customerName": "Cliente demonstração 01",
+      "customerNote": "Sem gelo no drink, por favor.",
+      "items": [
+        {
+          "id": "item-demo-1",
+          "productId": "gin-tonica",
+          "productNameSnapshot": "Gin tônica do Nardo",
+          "unitPriceCentsSnapshot": 2600,
+          "quantity": 2,
+          "lineTotalCents": 5200,
+          "note": ""
+        },
+        {
+          "id": "item-demo-2",
+          "productId": "batata-rustica",
+          "productNameSnapshot": "Torresmo da casa",
+          "unitPriceCentsSnapshot": 2800,
+          "quantity": 1,
+          "lineTotalCents": 2800,
+          "note": ""
+        }
+      ],
+      "subtotalCents": 8000,
+      "totalCents": 8000,
+      "createdAt": "2026-09-21T20:11:00.000Z",
+      "paidAt": "2026-09-21T20:12:00.000Z",
+      "updatedAt": "2026-09-21T20:12:00.000Z"
+    },
+    {
+      "id": "order-demo-1041",
+      "publicCode": "PED-1041",
+      "tableId": "table-12",
+      "tableLabel": "Mesa 12",
+      "status": "PREPARING",
+      "paymentStatus": "APPROVED",
+      "paymentMethod": "PIX",
+      "customerName": "",
+      "customerNote": "",
+      "items": [
+        {
+          "id": "item-demo-3",
+          "productId": "pilsen-600",
+          "productNameSnapshot": "Cerveja 600 ml",
+          "unitPriceCentsSnapshot": 1200,
+          "quantity": 3,
+          "lineTotalCents": 3600,
+          "note": ""
+        },
+        {
+          "id": "item-demo-4",
+          "productId": "dadinho-tapioca",
+          "productNameSnapshot": "Linguiça acebolada",
+          "unitPriceCentsSnapshot": 3200,
+          "quantity": 1,
+          "lineTotalCents": 3200,
+          "note": ""
+        }
+      ],
+      "subtotalCents": 6800,
+      "totalCents": 6800,
+      "createdAt": "2026-09-21T19:43:00.000Z",
+      "paidAt": "2026-09-21T19:44:00.000Z",
+      "updatedAt": "2026-09-21T19:46:00.000Z"
+    },
+    {
+      "id": "order-demo-1040",
+      "publicCode": "PED-1040",
+      "tableId": "table-01",
+      "tableLabel": "Mesa 01",
+      "status": "READY",
+      "paymentStatus": "APPROVED",
+      "paymentMethod": "PIX",
+      "customerName": "Cliente demonstração 02",
+      "customerNote": "",
+      "items": [
+        {
+          "id": "item-demo-5",
+          "productId": "caipirinha",
+          "productNameSnapshot": "Caipirinha do Nardo",
+          "unitPriceCentsSnapshot": 1900,
+          "quantity": 2,
+          "lineTotalCents": 3800,
+          "note": ""
+        },
+        {
+          "id": "item-demo-6",
+          "productId": "cola-lata",
+          "productNameSnapshot": "Refrigerante lata",
+          "unitPriceCentsSnapshot": 700,
+          "quantity": 1,
+          "lineTotalCents": 700,
+          "note": ""
+        }
+      ],
+      "subtotalCents": 4500,
+      "totalCents": 4500,
+      "createdAt": "2026-09-21T19:15:00.000Z",
+      "paidAt": "2026-09-21T19:16:00.000Z",
+      "updatedAt": "2026-09-21T19:25:00.000Z"
+    },
+    {
+      "id": "order-demo-1039",
+      "publicCode": "PED-1039",
+      "tableId": "table-20",
+      "tableLabel": "Mesa 20",
+      "status": "DELIVERED",
+      "paymentStatus": "APPROVED",
+      "paymentMethod": "PIX",
+      "customerName": "",
+      "customerNote": "",
+      "items": [
+        {
+          "id": "item-demo-7",
+          "productId": "ipa-lata",
+          "productNameSnapshot": "Cerveja lata 350 ml",
+          "unitPriceCentsSnapshot": 1800,
+          "quantity": 2,
+          "lineTotalCents": 3600,
+          "note": ""
+        }
+      ],
+      "subtotalCents": 3600,
+      "totalCents": 3600,
+      "createdAt": "2026-09-21T18:31:00.000Z",
+      "paidAt": "2026-09-21T18:32:00.000Z",
+      "updatedAt": "2026-09-21T18:44:00.000Z"
+    }
+  ]
+}

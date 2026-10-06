@@ -1,0 +1,11 @@
+node_modules/
+.vercel/
+.mobile-qa/
+.npm-cache-*/
+.env
+.env.*
+data/backups/
+data/store.json
+data/store.json.tmp
+*.log
+\[i.currentSrc
