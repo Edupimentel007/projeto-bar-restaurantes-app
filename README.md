@@ -9,6 +9,8 @@ MVP de pedidos do Bar do Nardo: o cliente acessa o cardápio da mesa por QR Code
 
 O painel administrativo exige as credenciais privadas configuradas na Vercel.
 
+Para abrir o projeto completo em outro computador, siga o [guia de instalação e migração](docs/NOVO-PC.md).
+
 ## O que já está pronto
 
 - Cardápio responsivo para cliente, vinculado à mesa pela URL.
